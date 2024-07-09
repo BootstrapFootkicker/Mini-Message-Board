@@ -6,3 +6,13 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+
+.message-container{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 10px;
+  border: black 1px solid;
+}
