@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <div class="message-container">
+        <span>Message: <%= message.text %></span>
+        <span>User: <%= message.user %></span>
+        <span>Date: <%= message.added.toDateString() %></span>
+        <a href="/"><button>Back</button></a>
+    </div>
+</body>
+</html>

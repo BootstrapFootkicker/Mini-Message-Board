@@ -5,14 +5,14 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
-    <% messages.forEach(function(message) { %>
-        <div CLASS="message-container">
+    <% messages.forEach(function(message, index) { %>
+        <div class="message-container">
             <span>Message: <%= message.text %></span>
             <span>User: <%= message.user %></span>
             <span>Date: <%= message.added.toDateString() %></span>
+            <a href="/details/<%= index %>"><button>Details</button></a>
         </div>
     <% }); %>
-
-<a href="/new"><button>Add Message</button></a>
+    <a href="/new"><button>Add Message</button></a>
 </body>
 </html>
